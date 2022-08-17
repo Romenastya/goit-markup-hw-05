@@ -153,6 +153,7 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  transition: border 250ms var(--cubic-bezier);
 }
 .address-link:hover {
   color: var(--accent-color);
@@ -235,6 +236,7 @@ ul {
 }
 .txt-block {
   display: flex;
+  margin-right: -30px;
 }
 .text-card {
   width: 270px;
@@ -345,6 +347,11 @@ ul {
 }
 .txt-card {
   margin-bottom: 16px;
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
 }
 .social-media-list {
   display: flex;
@@ -363,6 +370,7 @@ ul {
   justify-content: center;
   cursor: pointer;
   fill: #afb1b8;
+  transition: background-color 250ms var(--cubic-bezier);
 }
 .social-media-link:hover,
 .social-media-link:focus {
@@ -393,6 +401,7 @@ ul {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
+  transition: fill 250ms var(--cubic-bezier);
 }
 .logo-client {
   display: flex;
@@ -404,6 +413,7 @@ ul {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: border 250ms var(--cubic-bezier);
 }
 .logo-client:hover,
 .logo-client:focus {
@@ -526,7 +536,11 @@ ul {
   letter-spacing: 0.03em;
   border-radius: 4px;
   border: none;
+  transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier),
+    box-shadow 250ms var(--cubic-bezier);
+  cursor: pointer;
 }
+
 .btn-nav:hover {
   color: #ffffff;
   background-color: var(--accent-color);
@@ -633,7 +647,7 @@ ul {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
-  color: var(--text-color);
+  color: #757575;
 }
 
 /* modal */
